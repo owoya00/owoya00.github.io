@@ -1,0 +1,131 @@
+@charset "utf-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfont/OpenSans-Medium.woff) format("woff");
+  font-family: "NanumSquareRound";
+  src: url(../webfont/NanumSquareRoundOTFR.otf) format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "OpenSans", "NanumSquareRound", Arial, sans-serif;
+  background: #184965;
+  text-transform: uppercase;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #184965;
+  z-index: 999;
+}
+.head {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 10px solid#5ba7d5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+}
+.head .logo > img {
+  width: 150px;
+}
+.head ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.head ul li a {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 90px;
+  color: #62b6cc;
+}
+.head ul li:hover a {
+  color: #c1e4e7;
+}
+.head ul li:nth-child(3) a {
+  color: #c1e4e7;
+}
+.Project {
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Project_left {
+  width: 25%;
+  text-align: left;
+}
+.Project_left > span {
+  font-size: 48px;
+  line-height: 100px;
+  font-weight: 800;
+  color: #5ba7d5;
+}
+.Project_left > p {
+  font-size: 36px;
+  font-weight: 800;
+  color: #a1d1f1;
+  text-transform: capitalize;
+}
+.project_Color > img {
+  width: 50%;
+  object-fit: cover;
+}
+.project_Tool > img {
+  width: 100%;
+  object-fit: cover;
+}
+.Project_right {
+  width: 65%;
+}
+.Project_right a img {
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-slide:nth-of-type(4) .Project .Project_left > p {
+  font-size: 33px;
+}
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  right: 100px !important;
+}

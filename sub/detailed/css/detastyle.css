@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfont/OpenSans-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../webfont/NanumSquareRoundOTFR.otf) format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "OpenSans", "NanumSquareRound", Arial, sans-serif;
+  background: #184965;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #184965;
+}
+.head {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 10px solid#5ba7d5;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  width: 150px;
+}
+.head .logo > img {
+  width: 150px;
+}
+.head ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.head ul li a {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 90px;
+  color: #62b6cc;
+}
+.head ul li:hover a {
+  color: #c1e4e7;
+}
+.head ul li:first-child a {
+  color: #c1e4e7;
+}
+.infoSild {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.focus_po {
+  position: relative;
+  top: 100px;
+}
+.Focus_info {
+  width: 1280px;
+  margin: 0 auto;
+}
+.Focus_info > h1 {
+  margin: 50px auto;
+  font-size: 48px;
+  color: #fff;
+}
+.Focus_info > span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #c1e4e7;
+  position: relative;
+}
+.Focus_info > span:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 150px;
+  top: 20px;
+  width: 450px;
+  height: 5px;
+  background: #c1e4e7;
+}
+.Focus_info > span:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  width: 450px;
+  height: 5px;
+  background: #c1e4e7;
+}
+
+.Logo_po > img {
+  margin: 50px;
+  width: 500px;
+  object-fit: cover;
+}
+.Logo_po > img:nth-child(2) {
+  margin-left: 100px;
+  margin-right: 0;
+  width: 380px;
+  object-fit: cover;
+}
+.BTN {
+  display: flex;
+  justify-content: space-between;
+}
+.BTN p {
+  margin-top: 50px;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+}
+.BTN p:first-child {
+  background: #62b6cc;
+  color: #fff;
+}
+
+.BTN p:nth-child(2) {
+  background: #c1e4e7;
+  color: #184965;
+}
+
+.Color_info {
+  width: 1280px;
+  margin: 100px auto;
+}
+.Color_info > span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #c1e4e7;
+  position: relative;
+}
+.Color_info > span:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 300px;
+  top: 20px;
+  width: 450px;
+  height: 5px;
+  background: #c1e4e7;
+}
+.Color_info > span:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  left: 280px;
+  top: 20px;
+  width: 450px;
+  height: 5px;
+  background: #c1e4e7;
+}
+.Palette {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  color: #5ba7d5;
+  font-size: 24px;
+}
+.primary > h3 {
+  margin: 50px;
+  font-size: 24px;
+  color: #a1d1f1;
+  position: relative;
+}
+.primary > h3::after {
+  content: "★ ★";
+  font-size: 24px;
+  position: absolute;
+  left: 25px;
+  top: -30px;
+}
+.primary {
+  width: 45%;
+}
+.primary ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.primary ul li img {
+  width: 200px;
+  object-fit: cover;
+}
+.secondaryary {
+  width: 45%;
+}
+.secondaryary h3 {
+  margin: 50px;
+  font-size: 24px;
+  color: #a1d1f1;
+  position: relative;
+}
+.secondaryary > h3::after {
+  content: "★ ★ ★";
+  font-size: 24px;
+  position: absolute;
+  left: 48px;
+  top: -30px;
+}
+.secondaryary ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.secondaryary ul li img {
+  margin-top: 35px;
+  width: 120px;
+  object-fit: cover;
+}
+.Font {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #5ba7d5;
+}
+.font_openSans {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.font_nanum {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}

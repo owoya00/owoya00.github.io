@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfont/OpenSans-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../webfont/NanumSquareRoundOTFR.otf) format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "OpenSans", "NanumSquareRound", Arial, sans-serif;
+  background: #184965;
+  text-transform: uppercase;
+}
+
+.head {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 10px solid#5ba7d5;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 150px;
+}
+.head .logo > img {
+  width: 150px;
+}
+.head ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.head ul li a {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 90px;
+  color: #62b6cc;
+}
+.head ul li:hover a {
+  color: #c1e4e7;
+}
+.head ul li:first-child a {
+  color: #c1e4e7;
+}
+.menu {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.menu_star {
+  position: absolute;
+  text-align: center;
+}
+.about {
+  left: 0px;
+  top: 200px;
+}
+.portfolio {
+  left: 420px;
+  top: 500px;
+}
+.contact {
+  right: 420px;
+  top: 300px;
+}
+.detailed {
+  right: 0px;
+  top: 150px;
+}
+a .star_hover {
+  position: absolute;
+  left: -46px;
+  top: -46px;
+  display: none;
+}
+a .star_hover > span {
+  text-align: center;
+  font-size: 20px;
+  color: #a1d1f1;
+}
+.menu_star:hover a .star_hover {
+  display: block;
+}

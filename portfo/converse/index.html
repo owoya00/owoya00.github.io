@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨버스 공식 온라인 스토어</title>
+  </head>
+  <link href="images/icon.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="language">
+          <a href="#">
+            <img src="images/locale-kr.svg" alt="locale-kr" />
+            <p>
+              KR
+              <span>|</span>
+              한국어
+            </p>
+          </a>
+        </div>
+        <div class="notice swiper mySwiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <span>notice</span>
+              <p>로그인이 어려우실 경우 FAQ를 참조해주세요.</p>
+            </li>
+            <li class="swiper-slide">
+              <span>notice</span>
+              <p>추석 연휴 배송 일정 안내</p>
+            </li>
+            <li class="swiper-slide">
+              <span>event</span>
+              <p>카카오 1초 가입 시 최대 15,000원 쿠폰 증정</p>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </header>
+      <div class="nav">
+        <div class="gnb">
+          <div class="nav_left">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+            <ul>
+              <li>신발</li>
+              <li>의류</li>
+              <li>아동</li>
+              <li><a href="#">런칭캘린더</a></li>
+              <li><a href="#">sale</a></li>
+            </ul>
+          </div>
+          <div class="nav_right">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="images/user-regular.svg" alt="user-regular"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/cart-shopping-solid.svg"
+                    alt="cart-shopping-solid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/heart-regular.svg" alt="heart-regular"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/circle-question-regular.svg"
+                    alt="circle-question-regular"
+                /></a>
+              </li>
+              <li>
+                <div class="search">
+                  <p>검색</p>
+                  <img
+                    src="images/magnifying-glass-solid.svg"
+                    alt="magnifying-glass-solid"
+                  />
+                  <div class="top_btn_on">
+                    <img src="images/xmark-solid.svg" alt="xmark-solid" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="SEARCH_BOX">
+          <div class="top_searchbox">
+            <div class="top_searchbox_letf">
+              <div class="searchbox_letf_TOP">
+                <div class="Searchbox_over">
+                  <a href="#">
+                    <p>chuck 70</p>
+                    <div class="Searchbox_cover">
+                      <p>더 알아보기</p>
+                      <img src="images/Searchbox1.jpg" alt="Searchbox" />
+                    </div>
+                  </a>
+                </div>
+                <div class="Searchbox_over">
+                  <div class="Searchbox_TXT">
+                    <div class="txt">
+                      <a href="#">
+                        <div class="txt">
+                          <div class="txt_po">
+                            <h1>베스트셀러</h1>
+                            <p>▶ 구매하기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#">
+                    <p>platform</p>
+                    <div class="Searchbox_cover2">
+                      <p>더 알아보기</p>
+                      <img src="images/Searchbox2.jpg" alt="Searchbox" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="searchbox_letf_bottom">
+                <div class="Searchbox_over">
+                  <div class="Searchbox_TXT">
+                    <div class="txt">
+                      <a href="#">
+                        <div class="txt">
+                          <div class="txt_po">
+                            <h1>무엇을 도와드릴까요?</h1>
+                            <p>▶ FAQ에서 궁금한 내용을 찾아보세요</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#">
+                    <p>cruise</p>
+                    <div class="Searchbox_cover2">
+                      <p>더 알아보기</p>
+                      <img src="images/Searchbox3.jpg" alt="Searchbox" />
+                    </div>
+                  </a>
+                </div>
+                <div class="Searchbox_over">
+                  <a href="#">
+                    <p>gold stanard</p>
+                    <div class="Searchbox_cover">
+                      <p>더 알아보기</p>
+                      <img src="images/Searchbox4.jpg" alt="Searchbox" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="top_searchbox_right">
+              <div class="Searchbar">
+                <div class="Searchbar_po">
+                  <p>검색</p>
+                  <div class="Searchbar_box">
+                    <input
+                      type="text"
+                      id="keyword"
+                      name="keyword"
+                      class="inputTypeText"
+                      placeholder="검색어를 입력해주세요."
+                      autocomplete="off"
+                    />
+                    <img
+                      src="images/magnifying-glass-solid2.svg"
+                      alt="magnifying-glass-solid2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="popularity">
+                <div class="popularity_po">
+                  <p>인기검색어</p>
+                  <ul>
+                    <li><a href="#">척 70 빈티지</a></li>
+                    <li><a href="#">척테일러 올스타 시즈널</a></li>
+                    <li><a href="#">척테일러 올스타 무브</a></li>
+                    <li><a href="#">런스타 레거시</a></li>
+                    <li><a href="#">원스타</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lnb">
+          <div class="menu_lnb">
+            <div class="menu_lnb_position">
+              <div class="cate_box">
+                <ul class="tcate">
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">NEW ARRIVALS</a></li>
+                  <li><a href="#">베스트셀러</a></li>
+                  <li><a href="#">척테일러 올스타</a></li>
+                  <li><a href="#">척 70</a></li>
+                  <li><a href="#">플랫폼</a></li>
+                  <li><a href="#">스케이트보딩</a></li>
+                </ul>
+                <ul class="featured">
+                  <li><a href="#">FEATURED</a></li>
+                  <li><a href="#">2023 겨울 신상</a></li>
+                  <li><a href="#">크루즈</a></li>
+                  <li><a href="#">리프트</a></li>
+                  <li><a href="#">무브</a></li>
+                  <li><a href="#">척 70 플러스</a></li>
+                  <li><a href="#">런스타 레거시CX</a></li>
+                  <li><a href="#">척 70 AT-CX</a></li>
+                  <li><a href="#">신규가입 1만원 쿠폰</a></li>
+                </ul>
+              </div>
+              <div class="tbanner_title">
+                추천상품
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/commedesgarcons.jpg"
+                        alt="commedesgarcons"
+                      />
+                      COMME des GARÇONS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="images/onestar.jpg" alt="onestar" />
+                      ONE STAR
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="images/deluxeheel.jpg" alt="deluxeheel" />
+                      DE LUXE HEEL
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/conversecolor.jpg"
+                        alt="conversecolor"
+                      />
+                      CONVERSE COLOR
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="X_BTN">
+            <img src="images/xmark-solid.svg" alt="xmark-solid" />
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="main1">
+          <div class="main1_write">
+            <div class="main1_write_po">
+              <h1>
+                SEAN GREENE<br />
+                ONE STAR PRO
+              </h1>
+              <p>
+                컨버스 CONS 팀 라이더 션 그린이 그의 끈기와 노력,<br />
+                스피드에 대한 끊임없는 열망을 상징하는 디테일과 소재를 더한<br />
+                첫 번째 원스타 프로 컬러웨이를 선보입니다.
+              </p>
+              <a href="#"><p>구매하기</p></a>
+            </div>
+          </div>
+          <div class="main1_img">
+            <img src="images/main1.gif" alt="main" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="main2">
+          <h1>Shop By Style</h1>
+          <a href="#">▶ 신상품 보러가기</a>
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="images/shopbystyle1.jpg" alt="hightops" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="images/shopbystyle2.jpg" alt="lowtops" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="images/shopbystyle3.jpg" alt="deluxeheel" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="images/shopbystyle4.jpg" alt="top" /></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="main1">
+          <div class="main1_img">
+            <img src="images/main3.jpg" alt="main" />
+          </div>
+          <div class="main1_write main_bg">
+            <div class="main1_write_po main_bg_01">
+              <h1>
+                EDDIE CERNICKY<br />
+                ONE STAR PRO
+              </h1>
+              <p>
+                샌프란시스코 거리에서 스피드와 스킬로 주목받은<br />
+                컨버스 CONS 팀 라이더 에디 서니키가 예상치 못한 디테일이<br />
+                더해진 새로운 컬러웨이의 원스타 프로를 선보입니다.
+              </p>
+              <a href="#"><p>구매하기</p></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+    </div>
+  </body>
+</html>

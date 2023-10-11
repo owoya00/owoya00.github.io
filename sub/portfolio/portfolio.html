@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>저의 포트폴리오입니다</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/portstyle.css" />
+    <!-- Demo styles -->
+  </head>
+
+  <body>
+    <header>
+      <div class="head">
+        <a href="../../index.html">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+        </a>
+        <ul>
+          <li><a href="../home/home.html">home</a></li>
+          <li><a href="../about/about.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="../contact/contact.html">contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>selecto</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star4.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program1.png" alt="program1" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/selecto/index.html"
+                ><img
+                  src="images/portfolio/portfolio1.png"
+                  alt="portfolio1.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>pethroom</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star5.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program1.png" alt="program1" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/pethroom/index.html"
+                ><img
+                  src="images/portfolio/portfolio2.png"
+                  alt="portfolio2.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>orion</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star6.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program1.png" alt="program1" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/orion/index.html"
+                ><img
+                  src="images/portfolio/portfolio3.png"
+                  alt="portfolio3.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>Cookierun-kingdom</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star7.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program2.png" alt="program2" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/cookierun/index.html"
+                ><img
+                  src="images/portfolio/portfolio4.png"
+                  alt="portfolio4.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>Lush</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star8.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program1.png" alt="program1" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/lush/index.html"
+                ><img
+                  src="images/portfolio/portfolio5.png"
+                  alt="portfolio5.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Project">
+            <div class="Project_left">
+              <span>project</span>
+              <p>PNB1951</p>
+              <span>color</span>
+              <div class="project_Color">
+                <img src="images/star/star9.png" alt="star4" />
+              </div>
+              <span>tool</span>
+              <div class="project_Tool">
+                <img src="images/program/program2.png" alt="program2" />
+              </div>
+            </div>
+            <div class="Project_right">
+              <a href="../../portfo/pnb1951/index.html"
+                ><img
+                  src="images/portfolio/portfolio6.png"
+                  alt="portfolio6.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

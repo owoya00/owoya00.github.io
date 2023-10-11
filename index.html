@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>어서오세요</title>
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="mainPage">
+        <div class="welcome"><p>WELCOME MY HOME ★</p></div>
+        <div class="home">
+          <img src="images/door1.svg" alt="door1" />
+          <img src="images/door2.svg" alt="door2" />
+          <div class="star">
+            <a href="sub/home/home.html">
+              <img src="images/star1.svg" alt="star1" />
+              <p>▲<br />click</p>
+            </a>
+          </div>
+          <div class="name">조 영 아</div>
+        </div>
+      </div>
+
+      <script>
+        $(function () {
+          $(".star").css({ display: "none" });
+          $(".home").hover(
+            function () {
+              $(".star").css({ display: "block" });
+              $(".name").css({ display: "none" });
+            },
+            function () {
+              $(".star").css({ display: "none" });
+              $(".name").css({ display: "block" });
+            }
+          );
+        });
+      </script>
+    </div>
+  </body>
+</html>

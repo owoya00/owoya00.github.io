@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>저의 연락처입니다</title>
+    <link rel="stylesheet" href="css/contactstyle.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="warp">
+      <header>
+        <div class="head">
+          <a href="../../index.html">
+            <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          </a>
+          <ul>
+            <li><a href="../home/home.html">home</a></li>
+            <li><a href="../about/about.html">about</a></li>
+            <li><a href="../portfolio/portfolio.html">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main_contact">
+        <div class="Contact_talk">
+          <img src="images/contact.png" alt="contact" />
+          <img src="images/kakao_openchat.png" alt="kakao_openchat" />
+          <span>openkakao talk</span>
+        </div>
+        <div class="call">
+          <div class="HP">
+            <span>phone</span>
+            <p>010 3848 0257</p>
+          </div>
+          <div class="Mail">
+            <span>e-mail</span>
+            <p>owoya00@gmail.com</p>
+          </div>
+        </div>
+        <div class="ClickVeiw">
+          <p>▲</p>
+          <p>click</p>
+        </div>
+      </div>
+
+      <script>
+        $(function () {
+          $(".call").css({ display: "none" });
+          let status = true;
+          $(".ClickVeiw").click(function () {
+            if (status) {
+              $(".call").css({ display: "block" });
+              $(".Contact_talk img").eq(1).css({ display: "none" });
+              $(".Contact_talk span").css({ display: "none" });
+            } else {
+              $(".call").css({ display: "none" });
+              $(".Contact_talk img").eq(1).css({ display: "block" });
+              $(".Contact_talk span").css({ display: "block" });
+            }
+            status = !status;
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

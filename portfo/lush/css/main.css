@@ -1,0 +1,264 @@
+@charset "utf-8";
+section.main_top {
+  width: 100%;
+  margin: 100px auto;
+
+  text-align: center;
+}
+.main_top > p {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.main_top > h2 {
+  font-size: 36px;
+  padding: 20px 0;
+}
+.main_app {
+  width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main_app > li {
+  width: 300px;
+}
+.main_app > li img {
+  width: 288px;
+  height: 288px;
+  object-fit: cover;
+}
+.main_app > li span {
+  line-height: 50px;
+  font-weight: 800;
+}
+.survey {
+  position: relative;
+  width: 1280px;
+  height: 380px;
+  margin: 0 auto;
+  background: url(../images/main_survey.jpg) center/cover rgba(0, 0, 0, 0.3);
+
+  background-blend-mode: multiply;
+}
+.survey > div {
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  color: #fff;
+}
+.survey > div > h1 {
+  font-size: 32px;
+  line-height: 100px;
+  font-weight: 800;
+}
+.survey > div a P {
+  display: inline-block;
+  font-weight: 800;
+  border: 1px solid#fff;
+  padding: 15px 30px;
+  color: #fff;
+}
+.survey > div a:hover P {
+  color: #333;
+  background: #fff;
+}
+.lush_info {
+  width: 1280px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+.lush_info ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+.lush_info ul li {
+  width: 450px;
+  position: relative;
+}
+
+.lush_info ul li > a {
+  width: 400px;
+  color: #333;
+  position: relative;
+}
+.lush_info ul li a > div {
+  width: 400px;
+  overflow: hidden;
+}
+
+.lush_info ul li a img {
+  width: 400px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.lush_info ul li a:hover img {
+  filter: brightness(50%);
+  transform: scale(1.5);
+}
+.lush_info ul li > a h3 {
+  width: 80%;
+  position: absolute;
+  left: 25px;
+  bottom: 300px;
+  font-size: 36px;
+  white-space: wrap;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.lush_info ul li > a:hover h3 {
+  opacity: 1;
+}
+
+.lush_info ul li > a > span {
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.lush_info ul li > a > p {
+  width: 400px;
+  white-space: wrap;
+}
+
+.donation {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.donation > div {
+  width: 65%;
+}
+
+.donation > div img {
+  width: 90%;
+  object-fit: cover;
+}
+.donation > ul {
+  width: 30%;
+}
+.donation > ul li {
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 800;
+}
+.donation > ul li > a {
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+  color: #333;
+  border: 1px solid #333;
+}
+.donation > ul li:hover > a {
+  background: #000;
+  color: #fff;
+}
+
+.swiper-slide {
+  margin-bottom: 20px;
+}
+.swiper-notification {
+  margin-bottom: 100px;
+}
+.store_find {
+  width: 1280px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+.store_find > div {
+  width: 65%;
+}
+
+.store_find > div img {
+  width: 90%;
+  object-fit: cover;
+}
+.store_find > ul {
+  width: 30%;
+}
+.store_find > ul li {
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 800;
+}
+.store_find > ul li > a {
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+  color: #333;
+  border: 1px solid #333;
+}
+.store_find > ul li:hover > a {
+  background: #000;
+  color: #fff;
+}
+.lush_value {
+  width: 100%;
+  margin-top: 100px;
+  background: #fafafa;
+  position: relative;
+}
+.main_value {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.main_value li {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main_value li img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.lush_value_list {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lush_value_list li {
+  width: 180px;
+  height: 180px;
+  margin: 100px;
+  border-radius: 50%;
+  background: #222;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.lush_value_list li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lush_value_list li.on {
+  background: none;
+}

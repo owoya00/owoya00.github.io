@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>본 페이지 설명입니다</title>
+    <link rel="stylesheet" href="css/detastyle.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="warp">
+      <header>
+        <div class="head">
+          <a href="../../index.html">
+            <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          </a>
+          <ul>
+            <li><a href="../home/home.html">home</a></li>
+            <li><a href="../about/about.html">about</a></li>
+            <li><a href="../portfolio/portfolio.html">portfolio</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="infoSild">
+        <div class="focus_po">
+          <div class="Focus_info">
+            <h1>focus</h1>
+            <span>logo</span>
+            <div class="Logo_po">
+              <img src="images/logo.png" alt="logo" />
+              <img src="images/logo2.png" alt="logo2" />
+            </div>
+            <span>buttons</span>
+            <div class="BTN">
+              <p>normal</p>
+              <p>click</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infoSild">
+        <div class="focus_po">
+          <div class="Color_info">
+            <span>color palette</span>
+            <div class="Palette">
+              <div class="primary">
+                <h3>primary</h3>
+                <ul>
+                  <li>
+                    <img src="images/color/color184965.png" alt="color" /><br />
+                    <p>#184965</p>
+                  </li>
+                  <li>
+                    <img src="images/color/colorc1e4e7.png" alt="color" /><br />
+                    <p>#c1e4e7</p>
+                  </li>
+                  <li>
+                    <img src="images/color/color62b6cc.png" alt="color" /><br />
+                    <p>#62b6cc</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondaryary">
+                <h3>secondaryary</h3>
+                <ul>
+                  <li>
+                    <img src="images/color/colorffffff.png" alt="color" /><br />
+                    <p>#ffffff</p>
+                  </li>
+                  <li>
+                    <img src="images/color/colorffff00.png" alt="color" /><br />
+                    <p>#ffff00</p>
+                  </li>
+                  <li>
+                    <img src="images/color/colora1d1f1.png" alt="color" /><br />
+                    <p>#a1d1f1</p>
+                  </li>
+                  <li>
+                    <img src="images/color/colorcce9f9.png" alt="color" /><br />
+                    <p>#cce9f9</p>
+                  </li>
+                  <li>
+                    <img src="images/color/color5ba7d5.png" alt="color" /><br />
+                    <p>#5ba7d5</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span>typography</span>
+            <div class="Font">
+              <div class="font_openSans">
+                <p>OpenSans</p>
+                <p>OpenSans</p>
+              </div>
+              <div class="font_nanum">
+                <p>나눔스퀘어라운드 Regular</p>
+                <p>나눔스퀘어라운드 ExtraBold</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        let el = $(".infoSild");
+        $(el).each(function (index) {
+          $(this).on("mousewheel", function () {
+            console.log(event.wheelDelta);
+            let moveTop = $(window).scrollTop();
+            let eleseclector = $(el).eq(index);
+            if (event.wheelDelta < 0) {
+              if ($(eleseclector).next() != undefined) {
+                try {
+                  moveTop = $(eleseclector).next().offset().top;
+                } catch (e) {}
+              }
+            } else {
+              if ($(eleseclector).prev() != undefined) {
+                try {
+                  moveTop = $(eleseclector).prev().offset().top;
+                } catch (e) {}
+              }
+            }
+
+            $("html,body")
+              .stop()
+              .animate({ scrollTop: moveTop + "px" }, 500);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

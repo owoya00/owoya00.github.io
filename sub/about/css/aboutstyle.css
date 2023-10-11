@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfont/OpenSans-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../webfont/NanumSquareRoundOTFR.otf) format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "OpenSans", "NanumSquareRound", Arial, sans-serif;
+  background: #184965;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #184965;
+}
+.head {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 10px solid#5ba7d5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head ul li:nth-child(2) a {
+  color: #c1e4e7;
+}
+.logo {
+  width: 150px;
+}
+.head .logo > img {
+  width: 150px;
+}
+.head ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.head ul li a {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 90px;
+  color: #62b6cc;
+}
+.head ul li:hover a {
+  color: #c1e4e7;
+}
+.intro {
+  display: table;
+  table-layout: fixed;
+  width: 300%;
+  /* height: 100vh; */
+}
+.About {
+  display: table-cell;
+}
+.keyword_po {
+  display: flex;
+  justify-content: center;
+  /* height: 100%; */
+  align-items: center;
+}
+.Keyword_analign {
+  position: relative;
+  top: 150px;
+}
+.keyword h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.keyword ul {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.keyword ul li {
+  text-align: center;
+}
+.keyword ul li > img {
+  width: 200px;
+}
+.keyword ul li > p {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #5ba7d5;
+  font-family: "NanumSquareRound", Arial, sans-serif;
+}
+
+.profile_po {
+  display: flex;
+  justify-content: center;
+  /* height: 100vh;
+  position: relative;
+  top: -100px; */
+}
+.inner2 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.profile_left {
+  width: 600px;
+}
+.profile_left > h2 {
+  position: relative;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.profile_left > h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 350px;
+  height: 5px;
+  background: #fff;
+}
+.profile_left > p {
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #c1e4e7;
+  font-family: "NanumSquareRound", Arial, sans-serif;
+}
+.profile_left > p span {
+  margin-right: 50px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #5ba7d5;
+}
+.profile_left > p:nth-child(4) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile_right {
+  width: 600px;
+  background: #62b6cc;
+}
+.profile_right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Certificate_po {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  /* position: relative;
+  top: -100px; */
+}
+.inner3 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.Certificate_left {
+  width: 500px;
+}
+.Certificate_left > span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #62b6cc;
+}
+
+.Certificate_left > p {
+  font-size: 24px;
+  color: #a1d1f1;
+  line-height: 50px;
+  font-family: "NanumSquareRound", Arial, sans-serif;
+}
+.Certificate_left > p:first-of-type {
+  margin-top: 20px;
+}
+.Certificate_right {
+  width: 500px;
+}
+
+.Certificate_right > span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #62b6cc;
+}
+.Certificate_right ul li p {
+  font-size: 24px;
+  color: #a1d1f1;
+}
+.Certificate_right ul li img {
+  width: 45px;
+  object-fit: cover;
+}
+.Certificate_bottom {
+  width: 1280px;
+  margin: 0 auto;
+}
+.Certificate_bottom span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #62b6cc;
+}
+.Certificate_bottom ul {
+  display: flex;
+}
+.Certificate_bottom ul li {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.Certificate_bottom ul li img {
+  width: 80px;
+  object-fit: cover;
+}
