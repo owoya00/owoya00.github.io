@@ -17,6 +17,7 @@ $(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
   let menu = true;
   $(".search").click(function () {
     if (menu) {
@@ -25,8 +26,8 @@ $(function () {
       $(".search p").css("display", "none");
       $(".search>img").css("display", "none");
       $(".top_btn_on").css("display", "block");
-
       $(".SEARCH_BOX").css("left", "0");
+      //$(".submenu").css("display", "none");
       $("body").css("overflow", "hidden");
     } else {
       $(".nav").css("top", "75px");
@@ -39,6 +40,25 @@ $(function () {
     }
     menu = !menu;
   });
+
+  //서브메뉴
+
+  let Submenu = true;
+
+  $(".nav_left > ul > li").click(function () {
+    if (Submenu) {
+      let i = $(this).index();
+      console.log(i);
+      $(".Lnb>div").css("left", "-100% ");
+      $(".Lnb>div").eq(i).css({ left: "0", zIndex: "999" });
+    } else {
+      $(".Lnb>div").css("left", "-100% ");
+    }
+
+    Submenu = !Submenu;
+  });
+
+  //서브메뉴 끝
 
   $(window).scroll(function () {
     let ht = $(window).scrollTop();
@@ -102,5 +122,8 @@ $(function () {
       $(this).find("img:first-child").css("display", "block");
     }
     Hrart = !Hrart;
+  });
+  $(".X_BTN").click(function () {
+    $(".submenu").css("left", "-100%");
   });
 });
